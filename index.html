@@ -27,7 +27,6 @@
     a { color: var(--accent); text-decoration: none; font-weight: 500; }
     a:hover { text-decoration: underline; }
 
-    /* Header */
     .header {
       border-bottom: 1px solid #ddd;
       background: #f9f9f9;
@@ -36,6 +35,7 @@
       top: 0;
       z-index: 1000;
     }
+
     .container { width: min(1000px, 94%); margin: 0 auto; }
     .nav {
       display: flex; align-items: center; justify-content: space-between;
@@ -43,7 +43,6 @@
     }
     .brand { font-weight: 700; font-size: 18px; }
 
-    /* Hero Banner */
     .hero {
       height: 280px;
       display: flex;
@@ -73,7 +72,6 @@
       border-radius: var(--radius);
     }
 
-    /* Main layout */
     .main-layout {
       display: flex;
       gap: 28px;
@@ -83,7 +81,6 @@
     .main-content { flex: 2; min-width: 260px; }
     .sidebar { flex: 1; min-width: 220px; }
 
-    /* Cards */
     .card {
       background: #fff; 
       border: 1px solid #ddd; 
@@ -96,7 +93,6 @@
       margin-top: 0;
     }
 
-    /* Centered Image */
     .image-center {
       display: flex;
       justify-content: center;
@@ -108,24 +104,8 @@
       box-shadow: var(--shadow);
     }
 
-    /* Bigger image for Circle */
     .image-large img {
       max-width: 400px;
-    }
-
-    /* Table */
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 10px;
-    }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 8px;
-      text-align: center;
-    }
-    th {
-      background: #f1f1f1;
     }
   </style>
 </head>
@@ -141,12 +121,12 @@
   <main class="container">
     <section class="hero">
       <h1>Pre-Calculus Portfolio</h1>
-      <p>Unit-Circle</p>
+      <p>Unit Circle</p>
     </section>
 
     <div class="main-layout">
       <div class="main-content">
-        <!-- UNIT CIRCLE SECTIONS -->
+
         <div class="card">
           <h2>Using the Unit Circle in Real Life</h2>
           <p>
@@ -156,8 +136,31 @@
           </p>
         </div>
 
+        <div class="card">
+          <h2>How the Unit Circle Applies to a Clock</h2>
+          <p>
+            The unit circle applies to a clock because both involve circular motion and angles.
+            Each hour mark on the clock represents a 30° rotation, just like dividing the 360° 
+            of the unit circle into equal sections. The hands of the clock move in a circle, 
+            and their positions can be described using trigonometric functions such as sine and cosine, 
+            showing how the concept of the unit circle helps us understand rotation and periodic movement.
+          </p>
+        </div>
+
         <div class="image-center">
           <img src="CLOCK.jpg" alt="Clock Example">
+        </div>
+
+        <div class="card">
+          <h2>What is the Unit Circle?</h2>
+          <p>
+            The unit circle is a circle with a radius of exactly 1 unit, centered at the origin (0,0) on the coordinate plane.
+            It helps us understand the behavior of trigonometric functions and visualize angles and their sine/cosine values.
+            Any point on the circle follows the equation: <strong>x² + y² = 1</strong>.
+          </p>
+          <div class="image-center">
+            <img src="unitcircle.png" alt="Unit Circle Equation Diagram">
+          </div>
         </div>
 
         <div class="card">
@@ -195,51 +198,30 @@
         </div>
 
         <div class="card">
-          <h2>Unit Circle Table</h2>
+          <h2>Unit Circle Summary</h2>
           <p>
-            The unit circle table lists the coordinates of common angles and their sine and cosine values. 
-            It’s useful when solving trigonometric problems faster since it shows the main angle ratios.
+            Instead of memorizing the unit circle using a table, I focused on understanding how each angle connects 
+            to its sine and cosine values. The key idea is that as the angle increases, the point on the circle moves 
+            smoothly around, and both sine and cosine change between -1 and 1.
           </p>
-          <table>
-            <tr>
-              <th>Angle (Degrees)</th>
-              <th>Angle (Radians)</th>
-              <th>Coordinates (cosθ, sinθ)</th>
-            </tr>
-            <tr>
-              <td>0°</td>
-              <td>0</td>
-              <td>(1, 0)</td>
-            </tr>
-            <tr>
-              <td>30°</td>
-              <td>π/6</td>
-              <td>(√3/2, 1/2)</td>
-            </tr>
-            <tr>
-              <td>45°</td>
-              <td>π/4</td>
-              <td>(√2/2, √2/2)</td>
-            </tr>
-            <tr>
-              <td>60°</td>
-              <td>π/3</td>
-              <td>(1/2, √3/2)</td>
-            </tr>
-            <tr>
-              <td>90°</td>
-              <td>π/2</td>
-              <td>(0, 1)</td>
-            </tr>
-          </table>
+          <p>
+            For example, at 0° (or 0 radians), the point is at (1, 0). At 90° (π/2 radians), it’s at (0, 1). 
+            Then at 180° (π radians), it becomes (-1, 0), and at 270° (3π/2 radians), it’s (0, -1). 
+            By the time we return to 360° (or 2π radians), the point completes one full rotation back to (1, 0).
+          </p>
+          <p>
+            This shows that sine and cosine are periodic functions — they repeat in a regular pattern. 
+            Understanding this pattern helps in solving problems faster than relying on memorization.
+          </p>
         </div>
 
-        <!-- ACTIVITY 5 -->
+        <!-- ✅ Restored Activity 5: Landmarks -->
         <div class="card">
-          <h2>Pairwise Midpoints & Distances (Activity No. 5)</h2>
+          <h2>Activity 5: Pairwise Midpoints & Distances (Landmarks)</h2>
           <p>
             This activity is about plotting and finding the midpoints and distances between some famous landmarks in the Philippines using the Cartesian plane.
-            I chose five landmarks from different parts of the country and used their coordinates to find how far they are from each other. It helped me see how math can be used to connect real locations.
+            I chose five landmarks from different parts of the country and used their coordinates to find how far they are from each other. 
+            It helped me see how math can be used to connect real locations.
           </p>
 
           <p><b>Landmarks Used:</b></p>
@@ -266,6 +248,7 @@
             Overall, it was cool to see how plotting points can show something real about our country’s layout.
           </p>
         </div>
+
       </div>
 
       <aside class="sidebar">
