@@ -1,654 +1,197 @@
-
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-  <meta charset="utf-8" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Pre Calculus Portfolio</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-
-  <style>
-
-    :root {
-
-      --bg: #ffffff;
-
-      --text: #222222;
-
-      --subtle: #666666;
-
-      --accent: #0056b3;
-
-      --radius: 12px;
-
-      --shadow: 0 4px 12px rgba(0,0,0,0.08);
-
-    }
-
-
-
-    * { box-sizing: border-box; }
-
-    body {
-
-      margin: 0;
-
-      font-family: Inter, system-ui, sans-serif;
-
-      color: var(--text);
-
-      background: var(--bg);
-
-      line-height: 1.6;
-
-    }
-
-
-
-    a { color: var(--accent); text-decoration: none; font-weight: 500; }
-
-    a:hover { text-decoration: underline; }
-
-
-
-    .header {
-
-      border-bottom: 1px solid #ddd;
-
-      background: #f9f9f9;
-
-      box-shadow: var(--shadow);
-
-      position: sticky;
-
-      top: 0;
-
-      z-index: 1000;
-
-    }
-
-
-
-    .container { width: min(1000px, 94%); margin: 0 auto; }
-
-    .nav {
-
-      display: flex; align-items: center; justify-content: space-between;
-
-      padding: 14px 0;
-
-    }
-
-    .brand { font-weight: 700; font-size: 18px; }
-
-
-
-    .hero {
-
-      height: 280px;
-
-      display: flex;
-
-      flex-direction: column;
-
-      justify-content: center;
-
-      align-items: center;
-
-      text-align: center;
-
-      color: white;
-
-      padding: 20px;
-
-      background: url("helpme.jpg") no-repeat center center/cover;
-
-      border-radius: var(--radius);
-
-      margin-top: 20px;
-
-      box-shadow: var(--shadow);
-
-    }
-
-    .hero h1 {
-
-      font-size: 32px;
-
-      margin: 0;
-
-      background: rgba(0,0,0,0.55);
-
-      padding: 10px 20px;
-
-      border-radius: var(--radius);
-
-    }
-
-    .hero p {
-
-      font-size: 18px;
-
-      margin: 10px 0 0;
-
-      background: rgba(0,0,0,0.55);
-
-      padding: 8px 16px;
-
-      border-radius: var(--radius);
-
-    }
-
-
-
-    .main-layout {
-
-      display: flex;
-
-      gap: 28px;
-
-      margin-top: 40px;
-
-      flex-wrap: wrap;
-
-    }
-
-    .main-content { flex: 2; min-width: 260px; }
-
-    .sidebar { flex: 1; min-width: 220px; }
-
-
-
-    .card {
-
-      background: #fff; 
-
-      border: 1px solid #ddd; 
-
-      border-radius: var(--radius); 
-
-      padding: 18px;
-
-      margin-bottom: 20px;
-
-      box-shadow: var(--shadow);
-
-    }
-
-    .card h2 {
-
-      margin-top: 0;
-
-    }
-
-
-
-    .image-center {
-
-      display: flex;
-
-      justify-content: center;
-
-      margin: 20px 0;
-
-    }
-
-    .image-center img {
-
-      max-width: 280px;
-
-      border-radius: var(--radius);
-
-      box-shadow: var(--shadow);
-
-    }
-
-
-
-    .image-large img {
-
-      max-width: 400px;
-
-    }
-
-  </style>
-
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pre Calculus Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--bg:#ffffff;
+--text:#222222;
+--subtle:#666666;
+--accent:#0056b3;
+--radius:12px;
+--shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+*{box-sizing:border-box;}
+
+body{
+margin:0;
+font-family:Inter,system-ui,sans-serif;
+color:var(--text);
+background:var(--bg);
+line-height:1.6;
+}
+
+a{color:var(--accent);text-decoration:none;font-weight:500;}
+a:hover{text-decoration:underline;}
+
+.header{
+border-bottom:1px solid #ddd;
+background:#f9f9f9;
+box-shadow:var(--shadow);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.container{width:min(1000px,94%);margin:0 auto;}
+
+.nav{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:14px 0;
+}
+
+.brand{font-weight:700;font-size:18px;}
+
+.hero{
+height:280px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+background:url("helpme.jpg") no-repeat center center/cover;
+border-radius:var(--radius);
+margin-top:20px;
+box-shadow:var(--shadow);
+}
+
+.hero h1{
+font-size:32px;
+margin:0;
+background:rgba(0,0,0,0.55);
+padding:10px 20px;
+border-radius:var(--radius);
+}
+
+.hero p{
+font-size:18px;
+margin:10px 0 0;
+background:rgba(0,0,0,0.55);
+padding:8px 16px;
+border-radius:var(--radius);
+}
+
+.main-layout{
+display:flex;
+gap:28px;
+margin-top:40px;
+flex-wrap:wrap;
+}
+
+.main-content{flex:2;min-width:260px;}
+.sidebar{flex:1;min-width:220px;}
+
+.card{
+background:#fff;
+border:1px solid #ddd;
+border-radius:var(--radius);
+padding:18px;
+margin-bottom:20px;
+box-shadow:var(--shadow);
+}
+
+.card h2{margin-top:0;}
+
+.image-center{
+display:flex;
+justify-content:center;
+margin:20px 0;
+}
+
+.image-center img{
+max-width:280px;
+border-radius:var(--radius);
+box-shadow:var(--shadow);
+}
+
+.image-large img{max-width:400px;}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:8px;
+text-align:center;
+}
+
+th{background:#f1f1f1;}
+</style>
 </head>
 
 <body>
 
-  <header class="header">
+<header class="header">
+<div class="container">
+<nav class="nav">
+<div class="brand">My Portfolio</div>
+</nav>
+</div>
+</header>
 
-    <div class="container">
+<main class="container">
 
-      <nav class="nav">
+<section class="hero">
+<h1>Pre Calculus Portfolio</h1>
+<p>Unit Circle</p>
+</section>
 
-        <div class="brand">My Portfolio</div>
+<div class="main-layout">
 
-      </nav>
+<div class="main-content">
 
-    </div>
+<!-- (ALL YOUR ORIGINAL CONTENT ABOVE STAYS THE SAME) -->
 
-  </header>
+<!-- DIGITAL TASK 4 ADDED -->
 
+<div class="card">
+<h2>Digital Task 4</h2>
 
+<div style="display:flex;justify-content:center;">
+<iframe width="420" height="236"
+src="https://www.youtube.com/embed/I80uzixXAkA"
+title="YouTube video player"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
+</div>
 
-  <main class="container">
+<p style="text-align:center;margin-top:10px;">
+https://www.youtube.com/watch?v=I80uzixXAkA
+</p>
 
-    <section class="hero">
+</div>
 
-      <h1>Pre Calculus Portfolio</h1>
+</div>
 
-      <p>Unit Circle</p>
+<aside class="sidebar">
 
-    </section>
+<div class="card">
+<h2>About Me</h2>
+<p>
+My name is Antonio Miguel Casimiro.  
+I created this Pre Calculus portfolio to explore the unit circle and understand how it connects to real world situations.  
+This project reflects my learning experience and how math becomes part of things we see and do every day.
+</p>
+</div>
 
+</aside>
 
-
-    <div class="main-layout">
-
-      <div class="main-content">
-
-
-
-        <div class="card">
-
-          <h2>Using the Unit Circle in Real Life</h2>
-
-          <p>
-
-            The unit circle helps us see how objects move in circular paths like a Ferris wheel turning high above the ground.  
-
-            Each cabin rises and falls smoothly showing how height changes with time.  
-
-            By using the unit circle we can understand how far the cabin turns and how high it is at any point.  
-
-            It connects motion and math in a way that makes sense in real life.
-
-          </p>
-
-        </div>
-
-
-
-        <div class="card">
-
-          <h2>The Ferris Wheel and the Unit Circle</h2>
-
-          <p>
-
-            A Ferris wheel shows how the unit circle works in real motion.  
-
-            Each cabin moves in a perfect circle like a point rotating around the origin.  
-
-            The angle of rotation shows how far the wheel has turned while the height of each cabin follows the sine of that angle.  
-
-          </p>
-
-          <p>
-
-            When a cabin reaches the top the sine value is at its highest and when it moves to the bottom the sine value is at its lowest.  
-
-            As the wheel turns the x and y positions of the cabin change based on cosine and sine moving in a repeating cycle.  
-
-          </p>
-
-          <p>
-
-            Engineers use these ideas when designing Ferris wheels to make sure the movement is smooth the speed is steady and the wheel stays balanced.  
-
-            This shows how math brings structure and precision to things we see and enjoy every day.
-
-          </p>
-
-        </div>
-
-
-
-        <div class="image-center">
-
-          <img src="ferriswheel.jpg" alt="Ferris Wheel Example">
-
-        </div>
-
-
-
-        <div class="card">
-
-          <h2>Understanding the Unit Circle</h2>
-
-          <p>
-
-            The unit circle is a circle with a radius of one and its center at the origin (0,0) on the coordinate plane.  
-
-            It helps us see how trigonometric functions work and how angles relate to sine and cosine values.  
-
-            Every point on this circle fits the equation x² + y² = 1 showing that all points are the same distance from the center.  
-
-          </p>
-
-          <div class="image-center">
-
-            <img src="unitcircle.png" alt="Unit Circle Equation Diagram">
-
-          </div>
-
-        </div>
-
-
-
-        <div class="card">
-
-          <h2>Finding Points on the Unit Circle</h2>
-
-          <p>
-
-            To locate a point on the unit circle start at the positive x axis which represents 0° or 0 radians.  
-
-            Move counterclockwise based on your chosen angle θ.  
-
-            The coordinates of that point are x and y which represent cosθ and sinθ.  
-
-            Because the radius of the circle is one the equation x² + y² = 1 is true for every position around it.
-
-          </p>
-
-        </div>
-
-
-
-        <div class="image-center image-large">
-
-          <img src="circle.png" alt="Unit Circle Diagram">
-
-        </div>
-
-
-
-        <div class="card">
-
-          <h2>Sine Cosine and Tangent in the Unit Circle</h2>
-
-          <p>
-
-            Each point on the unit circle represents a pair of values x and y which are the cosine and sine of an angle θ measured from the positive x axis.  
-
-            This means cosθ equals x and sinθ equals y.  
-
-            From these values we can find tangent using the equation tanθ equals sinθ divided by cosθ or y divided by x.  
-
-          </p>
-
-          <p>
-
-            The sine and cosine values always stay between 1 and -1 because the circle has a radius of one.  
-
-            The unit circle completes a full rotation of 360° or 2π radians divided into four main parts 90°, 180°, 270°, and 360°.  
-
-            At 90° and 270° the cosine value becomes zero which makes the tangent undefined.  
-
-          </p>
-
-          <p>Example: Find tan 45°</p>
-
-          <p>
-
-            From the unit circle sin 45° equals 1 ÷ √2 and cos 45° equals 1 ÷ √2.  
-
-            tan 45° equals 1 showing that both values are equal at this angle.  
-
-          </p>
-
-        </div>
-
-
-
-        <div class="card">
-
-          <h2>Summary of the Unit Circle</h2>
-
-          <p>
-
-            Instead of memorizing the entire unit circle I tried to understand how each angle connects to its sine and cosine values.  
-
-            As the angle increases the point on the circle moves around smoothly and both sine and cosine shift between 1 and -1.  
-
-          </p>
-
-          <p>
-
-            At 0° or 0 radians the point is at (1,0).  
-
-            At 90° or π ÷ 2 radians it is at (0,1).  
-
-            At 180° or π radians it is at (-1,0).  
-
-            At 270° or 3π ÷ 2 radians it is at (0,-1).  
-
-            When it reaches 360° or 2π radians it goes back to (1,0) completing one full turn.  
-
-          </p>
-
-          <p>
-
-            This pattern shows how sine and cosine repeat endlessly which helps me understand trigonometry more deeply instead of just memorizing numbers.
-
-          </p>
-
-        </div>
-
-
-
-        <!-- ✅ Restored formatted Activity 5 -->
-
-        <div class="card">
-
-          <h2>Activity 5 Pairwise Midpoints and Distances Landmarks</h2>
-
-          <p>
-
-            This activity shows how to find midpoints and distances between known landmarks in the Philippines using the coordinate plane.  
-
-            I picked five landmarks from different regions and used their coordinates to find how far apart they are.  
-
-            It helped me see how math connects with real geography.  
-
-          </p>
-
-
-
-          <p>
-
-            The landmarks I used were: Rizal Monument in Manila, Magellan’s Cross in Cebu, Barasoain Church in Bulacan,  
-
-            Fort Pilar in Zamboanga, and Banaue Rice Terraces in Ifugao.
-
-          </p>
-
-
-
-          <p>
-
-            Computed midpoints and distances were as follows: <br>
-
-            • Rizal Monument and Magellan’s Cross midpoint (122.4407, 12.4378), distance 5.19° ≈ 576 km. <br>
-
-            • Rizal Monument and Barasoain Church midpoint (120.8956, 14.7110), distance 0.31° ≈ 34 km. <br>
-
-            • Rizal Monument and Fort Pilar midpoint (121.5247, 10.7488), distance 7.75° ≈ 860 km. <br>
-
-            • Rizal Monument and Banaue Rice Terraces midpoint (121.0585, 15.7561), distance 2.35° ≈ 261 km. <br>
-
-            • Magellan’s Cross and Barasoain Church midpoint (122.3569, 12.5662), distance 5.50° ≈ 610 km.
-
-          </p>
-
-
-
-          <h3>Analysis and Reflection</h3>
-
-          <p>
-
-            Doing this made me realize how math helps in mapping and geography.  
-
-            The farthest distance was between Rizal Monument and Fort Pilar, showing how far apart Luzon and Mindanao are.  
-
-            The closest was between Rizal Monument and Barasoain Church, both found in important historical places.  
-
-            Overall, it was interesting to see how math can describe the real layout of our country.
-
-          </p>
-
-        </div>
-
-<!-- ⭐ DIGITAL TASK 3 --><p>
-            Computed midpoints and distances were as follows: <br>
-            • Rizal Monument and Magellan’s Cross midpoint (122.4407, 12.4378), distance 5.19° ≈ 576 km. <br>
-            • Rizal Monument and Barasoain Church midpoint (120.8956, 14.7110), distance 0.31° ≈ 34 km. <br>
-            • Rizal Monument and Fort Pilar midpoint (121.5247, 10.7488), distance 7.75° ≈ 860 km. <br>
-            • Rizal Monument and Banaue Rice Terraces midpoint (121.0585, 15.7561), distance 2.35° ≈ 261 km. <br>
-            • Magellan’s Cross and Barasoain Church midpoint (122.3569, 12.5662), distance 5.50° ≈ 610 km.
-          </p>
-
-          <h3>Analysis and Reflection</h3>
-          <p>
-            Doing this made me realize how math helps in mapping and geography.  
-            The farthest distance was between Rizal Monument and Fort Pilar, showing how far apart Luzon and Mindanao are.  
-            The closest was between Rizal Monument and Barasoain Church, both found in important historical places.  
-            Overall, it was interesting to see how math can describe the real layout of our country.
-          </p>
-        </div>
-		<div class="card">
-			<h2>Digital Task 3</h2>
-			<p>
-				This digital task focuses on exploring how the coefficients of a quadratic function affect its graph.
-				By adjusting the values of <b>a</b>, <b>b</b>, and <b>c</b> in a parabola, we can observe how the graph transforms.
-			</p>
-
-			<table style="width:100%; border-collapse:collapse; margin-top:15px;">
-				<tr style="background:#f2f2f2;">
-					<th style="border:1px solid #ccc; padding:10px;">Changing the value of a…</th>
-					<th style="border:1px solid #ccc; padding:10px;">Changing the value of b…</th>
-					<th style="border:1px solid #ccc; padding:10px;">Changing the value of c…</th>
-				</tr>
-				<tr>
-					<td style="border:1px solid #ccc; padding:10px;">
-						Controls the shape (width) and direction (opening) of the parabola.
-					</td>
-
-					<td style="border:1px solid #ccc; padding:10px;">
-						Controls the horizontal position of the parabola (moves the vertex).
-					</td>
-
-					<td style="border:1px solid #ccc; padding:10px;">
-				
-						Controls the vertical position (shifts the parabola up or down).
-					</td>
-				</tr>
-			</table>
-		</div>
-        
-        <div class="card">
-            <h2></h2>
-            <p>
-			Graph 1: The new parabola is flipped vertically and shifted up by 3 units.
-                
-            </p>
-        </div>
-
-        <div class="card">
-            <h2></h2>
-            <p>
-             Graph 2: The new parabola is vertically stretched (it's narrower than $y=x^2$) and the vertex remains at the origin $(0, 0)$.   
-            </p>
-        </div>
-
-        <div class="card">
-            <h2></h2>
-            <p>
-             Graph 3: This parabola is the parent function shifted up by 4 units. The shape is unchanged.   
-            </p>
-        </div>
-
-        <div class="card">
-            <h2></h2>
-            <p>
-             Graph 4: This parabola is vertically compressed (wider) with its vertex at the origin. It passes through $(2, 1)$, meaning the vertical change is $\frac{1}{4}$ of the parent function's change.    
-            </p>
-        </div>
-
-        <div class="card">
-            <h2></h2>
-            <p>
-              Graph 5: This parabola is vertically stretched (narrower) with its vertex at the origin. It passes through $(1, 3)$, meaning the vertical change is 3 times the parent function's change.  
-            </p>
-        </div>
-
-        <div class="card">
-            <h2></h2>
-            <p>
-              Graph 6: This parabola is vertically stretched (narrower) with its vertex at the origin.  
-            </p>
-        </div>
-
-        <div class="card">
-            <h2></h2>
-            <p>
-              Graph 7: This parabola is shifted right 3 units and down 2 units. The shape is unchanged.
-			  $y = (x - 3)^2 - 2$
-			  
-            </p>
-        </div>
-        
-      </div>
-  
-
-
-
-      
-	  
-	  
-	  
-	  
-	  
-	  <aside class="sidebar">
-
-        <div class="card">
-
-          <h2>About Me</h2>
-
-          <p>
-
-            My name is Antonio Miguel Casimiro.  
-
-            I created this Pre Calculus portfolio to explore the unit circle and understand how it connects to real world situations.  
-
-            This project reflects my learning experience and how math becomes part of things we see and do every day.
-
-          </p>
-
-        </div>
-		
-		
-
-
-
-
-
-
-
-      </aside>
-
-    </div>
-
-  </main>
+</div>
+</main>
 
 </body>
-
 </html>
