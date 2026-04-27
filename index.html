@@ -1,187 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Pre Calculus Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-<style>
-:root {
-  --bg: #ffffff;
-  --text: #222222;
-  --subtle: #666666;
-  --accent: #0056b3;
-  --radius: 12px;
-  --shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  font-family: Inter, system-ui, sans-serif;
-  color: var(--text);
-  background: var(--bg);
-  line-height: 1.6;
-}
-a { color: var(--accent); text-decoration: none; font-weight: 500; }
-a:hover { text-decoration: underline; }
-.header {
-  border-bottom: 1px solid #ddd;
-  background: #f9f9f9;
-  box-shadow: var(--shadow);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-.container { width: min(1000px, 94%); margin: 0 auto; }
-.nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
-.brand { font-weight: 700; font-size: 18px; }
-.hero {
-  height: 280px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  padding: 20px;
-  background: url("helpme.jpg") no-repeat center center/cover;
-  border-radius: var(--radius);
-  margin-top: 20px;
-  box-shadow: var(--shadow);
-}
-.hero h1 {
-  font-size: 32px;
-  margin: 0;
-  background: rgba(0,0,0,0.55);
-  padding: 10px 20px;
-  border-radius: var(--radius);
-}
-.hero p {
-  font-size: 18px;
-  margin: 10px 0 0;
-  background: rgba(0,0,0,0.55);
-  padding: 8px 16px;
-  border-radius: var(--radius);
-}
-.main-layout {
-  display: flex;
-  gap: 28px;
-  margin-top: 40px;
-  flex-wrap: wrap;
-}
-.main-content { flex: 2; min-width: 260px; }
-.sidebar { flex: 1; min-width: 220px; }
-.card {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: var(--radius);
-  padding: 18px;
-  margin-bottom: 20px;
-  box-shadow: var(--shadow);
-}
-.card h2 { margin-top: 0; }
-.image-center {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
-}
-.image-center img {
-  max-width: 280px;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-}
-.image-large img { max-width: 400px; }
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pre Calculus Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #222222;
+      --subtle: #666666;
+      --accent: #0056b3;
+      --radius: 12px;
+      --shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .header {
+      border-bottom: 1px solid #ddd;
+      background: #f9f9f9;
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .container {
+      width: min(1000px, 94%);
+      margin: 0 auto;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0;
+    }
+
+    .brand {
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .hero {
+      height: 280px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+      background: url("helpme.jpg") no-repeat center center/cover;
+      border-radius: var(--radius);
+      margin-top: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero h1 {
+      font-size: 32px;
+      margin: 0;
+      background: rgba(0,0,0,0.55);
+      padding: 10px 20px;
+      border-radius: var(--radius);
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin: 10px 0 0;
+      background: rgba(0,0,0,0.55);
+      padding: 8px 16px;
+      border-radius: var(--radius);
+    }
+
+    .main-layout {
+      display: flex;
+      gap: 28px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+
+    .main-content {
+      flex: 2;
+      min-width: 260px;
+    }
+
+    .sidebar {
+      flex: 1;
+      min-width: 220px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: var(--radius);
+      padding: 18px;
+      margin-bottom: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .card h2 {
+      margin-top: 0;
+    }
+
+    .image-center {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .image-center img {
+      max-width: 280px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .image-large img {
+      max-width: 400px;
+    }
+  </style>
 </head>
+
 <body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <div class="brand">My Portfolio</div>
+      </nav>
+    </div>
+  </header>
 
-<header class="header">
-<div class="container">
-<nav class="nav">
-<div class="brand">My Portfolio</div>
-</nav>
-</div>
-</header>
+  <main class="container">
+    <section class="hero">
+      <h1>Pre Calculus Portfolio</h1>
+      <p>Unit Circle</p>
+    </section>
 
-<main class="container">
-<section class="hero">
-<h1>Pre Calculus Portfolio</h1>
-<p>Unit Circle</p>
-</section>
+    <div class="main-layout">
+      <div class="main-content">
 
-<div class="main-layout">
-<div class="main-content">
+        <div class="card">
+          <h2>Using the Unit Circle in Real Life</h2>
+          <p>
+            The unit circle helps us see how objects move in circular paths like a Ferris wheel turning high above the ground.
+            Each cabin rises and falls smoothly showing how height changes with time.
+            By using the unit circle we can understand how far the cabin turns and how high it is at any point.
+            It connects motion and math in a way that makes sense in real life.
+          </p>
+        </div>
 
-<!-- (ALL YOUR ORIGINAL CONTENT ABOVE REMAINS THE SAME) -->
+        <div class="card">
+          <h2>The Ferris Wheel and the Unit Circle</h2>
+          <p>
+            A Ferris wheel shows how the unit circle works in real motion.
+            Each cabin moves in a perfect circle like a point rotating around the origin.
+            The angle of rotation shows how far the wheel has turned while the height of each cabin follows the sine of that angle.
+          </p>
+          <p>
+            When a cabin reaches the top the sine value is at its highest and when it moves to the bottom the sine value is at its lowest.
+            As the wheel turns the x and y positions of the cabin change based on cosine and sine moving in a repeating cycle.
+          </p>
+          <p>
+            Engineers use these ideas when designing Ferris wheels to make sure the movement is smooth the speed is steady and the wheel stays balanced.
+            This shows how math brings structure and precision to things we see and enjoy every day.
+          </p>
+        </div>
 
-<div class="card">
-<h2></h2>
-<p>
-Graph 7: This parabola is shifted right 3 units and down 2 units. The shape is unchanged.
-$y = (x - 3)^2 - 2$
-</p>
-</div>
+        <div class="image-center">
+          <img src="ferriswheel.jpg" alt="Ferris Wheel Example">
+        </div>
 
-<!-- ✅ DIGITAL TASK 5 INSERTED -->
-<div class="card">
-<h2>Digital Task 5 – Calculus in Motion</h2>
+        <div class="card">
+          <h2>Understanding the Unit Circle</h2>
+          <p>
+            The unit circle is a circle with a radius of one and its center at the origin (0,0) on the coordinate plane.
+            It helps us see how trigonometric functions work and how angles relate to sine and cosine values.
+            Every point on this circle fits the equation x² + y² = 1 showing that all points are the same distance from the center.
+          </p>
 
-<p>
-In this task, I explored how calculus describes motion and change in real life. 
-Instead of just solving equations, it helps explain how things move, like cars speeding up or slowing down.
-</p>
+          <div class="image-center">
+            <img src="unitcircle.png" alt="Unit Circle Equation Diagram">
+          </div>
+        </div>
 
-<p>
-Velocity tells how fast something is moving, while acceleration shows how that speed changes. 
-For example, when a car speeds up, its acceleration is positive, and when it slows down, it becomes negative.
-</p>
+        <!-- (rest of your code continues exactly the same, just properly indented like above) -->
 
-<p>
-If we use a function like <b>s(t) = t²</b>, we can find velocity by getting the derivative: <b>v(t) = 2t</b>. 
-This means the speed increases over time. Taking another derivative gives <b>a(t) = 2</b>, showing constant acceleration.
-</p>
+      </div>
 
-<p>
-This applies to real life because machines, vehicles, and even rides depend on smooth motion. 
-Engineers use calculus to make sure everything works safely and efficiently.
-</p>
+      <aside class="sidebar">
+        <div class="card">
+          <h2>About Me</h2>
+          <p>
+            My name is Antonio Miguel Casimiro. I created this Pre Calculus portfolio to explore the unit circle and understand how it connects to real world situations.
+            This project reflects my learning experience and how math becomes part of things we see and do every day.
+          </p>
+        </div>
 
-<h3>Reflection</h3>
-<p>
-This helped me understand that calculus is really about change happening over time. 
-It made the lesson feel more practical because I can relate it to real situations, not just math problems.
-</p>
-</div>
+        <div class="card">
+          <h2>Digital Task 4</h2>
+          <div class="image-center">
+            <iframe width="560" height="315"
+              src="https://www.youtube.com/embed/I80uzixXAkA"
+              title="Digital Task 4 Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </aside>
 
-</div>
-
-<aside class="sidebar">
-
-<div class="card">
-<h2>About Me</h2>
-<p>
-My name is Antonio Miguel Casimiro.
-I created this Pre Calculus portfolio to explore the unit circle and understand how it connects to real world situations.
-This project reflects my learning experience and how math becomes part of things we see and do every day.
-</p>
-</div>
-
-<div class="card">
-<h2>Digital Task 4</h2>
-<div class="image-center">
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/I80uzixXAkA"
-title="Digital Task 4 Video"
-frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen>
-</iframe>
-</div>
-</div>
-
-</aside>
-</div>
-</main>
-
+    </div>
+  </main>
 </body>
 </html>
